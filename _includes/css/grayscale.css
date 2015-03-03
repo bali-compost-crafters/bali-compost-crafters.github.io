@@ -17,7 +17,6 @@ html {
     height: 100%;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -26,6 +25,14 @@ h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -214,7 +221,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -231,7 +238,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
