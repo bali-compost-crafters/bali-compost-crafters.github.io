@@ -1,19 +1,21 @@
 # Site settings
 title: Bali Compost Crafters - Simply Organic Living Earth
 email: info@balicompostcrafters.com
-url: http://balicompostcrafters.com
 description: "Bali Compost Crafters, purveyors of the finest quality simply organic living earth"
-permalink: none
-
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
   links: '#219ab3'
-
 # Footer settings
 footer: Bali Compost Crafters
-
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+sass:
+  style: compressed
+  sass_dir: _sass
 social:
   - title: facebook
     url: https://www.facebook.com/BaliCompostCrafters
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

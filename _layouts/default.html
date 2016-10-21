@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {% include nav.html %}
+  {% include head.html %}
+  <body>
+
     {% include header.html %}
-    {% include about.html %}
-    {% include campaign.html %}
-    {% include contact.html %}
+
+    <main>
+      {{ content }}
+    </main>
+
     {% include footer.html %}
-    {% include js.html %}
-    </body>
+
+  </body>
 </html>

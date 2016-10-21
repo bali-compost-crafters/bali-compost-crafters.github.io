@@ -1,0 +1,69 @@
+---
+---
+
+@import 'settings';
+@import 'foundation';
+@include foundation-everything;
+
+main {
+  @include grid-row;
+  article {
+    header, div:first {
+      @include grid-column(12);
+    }
+  }
+}
+
+/* http://stackoverflow.com/questions/35388106/top-bar-not-aligning-in-foundation-6 */
+.top-bar-title {
+    float: left;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-left: .5rem;
+    color: $white;
+    font-family: 'Delius', cursive;
+}
+
+#brand-logo {
+    height: 80vh;
+    width: auto;
+}
+
+#landing {
+   background: url(/img/intro-bg.jpg) no-repeat center center scroll;
+   text-align: center;
+   height: 85vh;
+}
+
+#top-menu-icon {
+    vertical-align: text-top;
+}
+
+.top-bar a {
+    color: $topbar-link-color;
+    font-weight: bold;
+}
+
+.top-bar a:hover { color: $topbar-link-color-hover; }
+
+img.team-image {
+    width: auto;
+    height: 10rem;
+    border-radius: 100px;
+}
+
+div.ideas-banner {
+    background-color: $brown;
+    color: $green;
+    padding: 1em;
+}
+
+ul#ideas-list li {
+    color: $white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div.row-space {
+    padding: 1em;
+}

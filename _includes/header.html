@@ -1,15 +1,22 @@
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <img class="brand-logo" src="img/logo_white.png" alt="Bali Compost Crafters"/>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<div id="top-bar" class="top-bar">
+    <div class="top-bar-title">
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon light" type="button" style="float: left; margin: .1em;" data-toggle></button>
+        </span>
+        <span>
+            <span id="top-menu-icon" class="hide-for-small-only"><i class="icon-logo-tree-only"></i></span>
+            <strong>BALI COMPOST CRAFTERS</strong>
+        </span>
+    </div>
+    <div id="responsive-menu">
+        <div class="top-bar-right">
+            <ul id="right-buttons" class="menu">
+                {% for page in site.pages %}
+                {% if page.title %}
+                <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
         </div>
-    </header>
+    </div>
+</div>
