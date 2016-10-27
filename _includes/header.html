@@ -4,8 +4,10 @@
             <button class="menu-icon light" type="button" style="float: left; margin: .1em;" data-toggle></button>
         </span>
         <span>
-            <span id="top-menu-icon" class="hide-for-small-only"><i class="icon-logo-tree-only"></i></span>
-            <strong>BALI COMPOST CRAFTERS</strong>
+            <a href="/">
+                <span id="top-menu-icon" class="hide-for-small-only"><i class="icon-logo-tree-only"></i></span>
+                <strong>BALI COMPOST CRAFTERS</strong>
+            </a>
         </span>
     </div>
     <div id="responsive-menu">
@@ -13,7 +15,7 @@
             <ul id="right-buttons" class="menu">
                 {% for page in site.pages %}
                 {% if page.title %}
-                <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>

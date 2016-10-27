@@ -67,3 +67,16 @@ ul#ideas-list li {
 div.row-space {
     padding: 1em;
 }
+
+div.home-product-box {
+    border: 1px dashed $black;
+    margin: 1em;
+}
+
+div.home-product-box img {
+    width: 50%;
+}
+
+div.home-testimonials p {
+    font-size: 120%;
+}
