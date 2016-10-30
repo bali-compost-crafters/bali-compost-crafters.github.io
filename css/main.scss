@@ -49,7 +49,18 @@ main {
 img.team-image {
     width: auto;
     height: 10rem;
-    border-radius: 100px;
+    border-radius: 100%;
+}
+
+div.contact-box {
+    border: 1px dashed $black;
+    margin: 1em;
+}
+
+div.contact-box img {
+    border-radius: 100%;
+    margin:1em;
+    width: 10rem;
 }
 
 div.ideas-banner {
