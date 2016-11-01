@@ -14,9 +14,9 @@
         <div class="top-bar-right">
             <ul id="right-buttons" class="menu">
                 {% for page in site.pages %}
-                {% if page.title %}
-                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-                {% endif %}
+                    {% if page.title %}
+                        <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>

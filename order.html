@@ -1,0 +1,19 @@
+---
+title: Order
+layout: default
+---
+
+{% for product in site.data.product %}
+<div class="row row-space">
+    <div class="columns small-2">
+        <img src="img/sack.png" alt="{{product.title}}"/>
+    </div>
+    <div class="columns small-8">
+        <h4>{{ product.title }}</h4>
+        <p>{{ product.description }}</p>
+    </div>
+    <div class="columns small-2 text-center">
+        <h3>Order</h3>
+    </div>
+</div>
+{% endfor %}

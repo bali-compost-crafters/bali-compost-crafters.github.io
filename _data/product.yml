@@ -1,0 +1,19 @@
+- title: Rainforest Compost
+  id: rainforest_compost
+  description: |
+      This stuff is really good compost, it's epic! It makes all plants grow better.
+      You can get a really good feel for it with your hands!
+  benefits:
+    - Great for lawns and gardens
+    - Perfect for raised bed gardens
+    - Retains water
+    - Replace eroded soil
+    - Complements our compost
+- title: Topsoil
+  id: topsoil
+  description: |
+      Really, really good topsoil, it makes the top of your garden look and feel great!
+- title: Mulch
+  id: mulch
+  description: |
+      Mulch, which is really good quality and allows people to protect their top-soil from the rain.

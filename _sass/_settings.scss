@@ -50,7 +50,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #e87020,
+  primary: #E05733,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -59,11 +59,11 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #281E14;
 $white: #fefefe;
-$brown: #292119;
-$green: #48ad54;
-$off-white: #dedad4;
+$brown: #422D19;
+$green: #399495;
+$off-white: #EDE6DA;
 $body-background: $off-white;
 $body-font-color: $black;
 $body-font-family: 'Alice', serif;
@@ -133,7 +133,7 @@ $header-sizes: (
     'h6': 16,
   ),
 );
-$header-color: inherit;
+$header-color: $green;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
