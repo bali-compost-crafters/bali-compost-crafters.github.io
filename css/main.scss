@@ -6,12 +6,12 @@
 @include foundation-everything;
 
 main {
-  @include grid-row;
-  article {
-    header, div:first {
-      @include grid-column(12);
+    @include grid-row;
+    article {
+        header, div:first {
+            @include grid-column(12);
+        }
     }
-  }
 }
 
 /* http://stackoverflow.com/questions/35388106/top-bar-not-aligning-in-foundation-6 */
@@ -21,18 +21,45 @@ main {
     margin-top: 0.5rem;
     margin-left: .5rem;
     color: $white;
-    font-family: 'Delius', cursive;
+    font-family: $header-font-family;
+    font-weight: lighter;
+    letter-spacing: 2px;
 }
 
 #brand-logo {
     height: 80vh;
     width: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #landing {
-   background: url(/img/intro-bg.jpg) no-repeat center center scroll;
-   text-align: center;
-   height: 85vh;
+    text-align: center;
+    height: 90vh;
+
+    background: url(/img/intro-bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 90vh;
+        top: auto;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        width: 100%;
+        background: -moz-linear-gradient(top,  rgba(237,230,218,0) 95%, rgba(237,230,218,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(237,230,218,0) 95%,rgba(237,230,218,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(237,230,218,0) 95%,rgba(237,230,218,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ede6da', endColorstr='#ede6da',GradientType=0 ); /* IE6-9 */
+
+
+
+    }
 }
 
 #top-menu-icon {
@@ -69,23 +96,8 @@ div.ideas-banner {
     padding: 1em;
 }
 
-ul#ideas-list li {
-    color: $white;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
 div.row-space {
     padding: 1em;
-}
-
-div.home-product-box {
-    border: 1px dashed $black;
-    margin: 1em;
-}
-
-div.home-product-box img {
-    width: 50%;
 }
 
 div.home-testimonials p {
@@ -96,13 +108,26 @@ div.home-testimonials p {
     list-style-type: none;
 }
 
-//footer {
-//    background-color: $brown;
-//    margin-top: 100%;
-//    color: white;
-//}
-//
-//footer p {
-//    margin: 0px;
-//}
-//
+div.product-range-item img {
+    border-radius: 100%;
+    width: 12rem;
+}
+
+div.product-range-item img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    letter-spacing: 1px;
+}
+
+div.simply-living-organic-earth img {
+    border-radius: 100%;
+    width: 15rem;
+}
+
+hr {
+    border-style: dotted;
+    border-color: $brown;
+}

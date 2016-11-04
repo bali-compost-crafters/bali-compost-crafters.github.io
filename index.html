@@ -4,85 +4,44 @@ layout: home
 
 <div id="landing" class="row expanded">
     <div class="small-12 small-centered columns text-center row-space">
-        <img id="brand-logo" class="show-for-medium" src="img/logo_white.png" alt="Bali Compost Crafters Logo">
-        <img class="show-for-small-only" src="img/logo_white_small.png" style="margin-top: 30%;" alt="Bali Compost Crafters Logo">
+        <img id="brand-logo" class="show-for-medium" src="img/logo.png" alt="Bali Compost Crafters Logo">
+        <img class="show-for-small-only" src="img/logo_small.png" style="margin-top: 30%;" alt="Bali Compost Crafters Logo">
     </div>
 </div>
 
 <div class="row expanded">
     <div class="small-12 small-centered columns">
-        <h2 class="text-center">Simply Organic Living Earth.</h2>
-        <hr>
+        <br>
+        <h1 class="text-center">Simply Organic Living Earth.</h1>
     </div>
-</div>
 
-<div class="row expanded small-up-1 medium-up-3 row-space">
-    <div class="column text-center">
-        <div class="home-product-box">
-            <h3>Compost</h3>
-            <img src="img/sack.png">
-            <ul>
-                <li>Enhances crop yields.</li>
-                <li>Perfect for pot plants.</li>
-                <li>Retains water.</li>
-                <li>Rejuvenates farmland.</li>
-                <li>Promotes healthy crops.</li>
-            </ul>
-            <a href="/order" class="button small">Order Now</a>
+    <div class="row expanded small-up-1 medium-up-2 simply-living-organic-earth row-space">
+        <div class="column text-center row-space">
+            <img src="/img/simply_living_organic_earth.jpg" alt="Image of a nice tree in tropical garden" />
         </div>
-    </div>
-    <div class="column text-center ">
-        <div class="home-product-box">
-            <h3>Top Soil</h3>
-            <img src="img/sack.png">
-            <ul>
-                <li>Great for lawns and gardens.</li>
-                <li>Perfect for raised bed gardens.</li>
-                <li>Retains water.</li>
-                <li>Replace Eroded Soil</li>
-                <li>Complements our compost</li>
-            </ul>
-            <a href="/order" class="button small">Order Now</a>
-        </div>
-    </div>
-    <div class="column text-center ">
-        <div class="home-product-box">
-            <h3>Mulch</h3>
-            <img src="img/sack.png">
-            <ul>
-                <li>Protects soil and plants.</li>
-                <li>Encourages water retention.</li>
-                <li>Retards weed growth.</li>
-                <li>Aerates soil.</li>
-                <li>Complements top soil.</li>
-            </ul>
-            <a href="/order" class="button small">Order Now</a>
+        <div class="column row-space">
+            <p><strong>Our mission is to reduce the ammount of waste entering Bali's tip! 70% or more of the waste in the tip is green waste. We take the waste and profit from it, and the earth profits also.</strong></p>
+            <p><strong>Our mission is to reduce the ammount of waste entering Bali's tip! 70% or more of the waste in the tip is green waste. We take the waste and profit from it, and the earth profits also.</strong></p>
+            <p><strong>Our mission is to reduce the ammount of waste entering Bali's tip! 70% or more of the waste in the tip is green waste.</strong></p>
         </div>
     </div>
 </div>
 
-<div class="row column expanded ideas-banner row-space">
-    <div class="column row text-center">
-        <h2>Who are we?</h2>
-    </div>
-    <div class="row small-up-1 medium-up-2 row-space">
-        <div class="column">
-            <p>We're located in the Bukit</p>
-        </div>
-        <div class="column text-center" style="margin-top: 1em;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Udayana_University_Logo.png/180px-Udayana_University_Logo.png" style="border-radius:500px; width: 28%;"/>
-        </div>
-    </div>
-</div>
-
-<div class="row column expanded row-space home-testimonials">
-    <h2>What others are saying?</h2>
+<div class="row expanded text-center">
     <hr>
-    <p class="text-left"><i>"This dirt is awesome sauce, I'm even using it on my food!!!"</i> - Phil, Kommune Bali</p>
-    <p class="text-right"><i>"Our trees have never had such great roots, too good guys!!!"</i> - Ahsley, Happy Time Villas</p>
-    <a href="/testimonials" target="_blank">Read more</a>
+    <h1>Product Range</h1>
 </div>
-
-<div class="row column expanded row-space text-center ideas-banner">
-    <h2>Ready to give our compost a try?</h2><h2>Please visit the <a href="/order">order page</a>!</h2>
+<div class="row expanded small-up-1 medium-up-3 row-space">
+    {% for product in site.data.product %}
+    <div class="column text-center product-range-item row-space" style="border-right: thing dashed black;">
+        <h3>{{ product.display_title }}</h3>
+        <img src="img/sack.png" style="background-color: {{ product.colour }};">
+            <ul>
+                {% for benefit in product.benefits %}
+                <li>{{ benefit }}</li>
+                {% endfor %}
+            </ul>
+            <a href="/order" class="button medium">Order Now</a>
+    </div>
+    {% endfor %}
 </div>
