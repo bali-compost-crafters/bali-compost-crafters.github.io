@@ -1,14 +1,14 @@
 # Site settings
-title: Bali Compost Crafters - Simply Organic Living Earth
+slogan: Affordable Organic Nutrients
+title: Bali Compost Crafters - Affordable Organic Nutrients
 email: info@balicompostcrafters.com
-description: "Bali Compost Crafters, purveyors of the finest quality simply organic living earth"
+description: "Bali Compost Crafters, purveyors of the finest quality affordable organic nutrients"
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
   links: '#219ab3'
 # Footer settings
 footer: Bali Compost Crafters
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 sass:
   style: compressed
   sass_dir: _sass
@@ -19,7 +19,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-
 defaults:
     -
         scope:
