@@ -122,6 +122,10 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 1px;
 }
 
+h2,h3,h4,h5,h6 {
+    color: $primary-color;
+}
+
 div.simply-living-organic-earth img {
     border-radius: 100%;
     width: 15rem;
@@ -129,5 +133,32 @@ div.simply-living-organic-earth img {
 
 hr {
     border-style: dotted;
-    border-color: $brown;
+    border-color: $dark-beige;
+}
+
+#home-testimonials {
+    padding-left: 4em;
+    padding-right: 4em;
+    font-weight: bold;
+}
+
+@media screen and #{breakpoint(medium)} {
+    #topsoil, #rainforest-compost, #home-news, #home-testimonials {
+        border-right: thin dotted $dark-beige;
+    }
+}
+
+.partner-logo {
+    width: 15rem;
+    padding: 1rem;
+}
+
+.row {
+    background-color: $white;
+}
+
+
+#site-footer p {
+    color: $white;
+    margin: .3rem;
 }

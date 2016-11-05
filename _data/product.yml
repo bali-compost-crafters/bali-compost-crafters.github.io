@@ -1,6 +1,6 @@
 - title: Rainforest Compost
   display_title: COMPOST
-  id: rainforest_compost
+  id: 'rainforest-compost'
   colour: '#422D19'
   description: |
       This stuff is really good compost, it's epic! It makes all plants grow better.

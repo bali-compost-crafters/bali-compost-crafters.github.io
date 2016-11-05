@@ -33,7 +33,7 @@ layout: home
 </div>
 <div class="row expanded small-up-1 medium-up-3 row-space">
     {% for product in site.data.product %}
-    <div class="column text-center product-range-item row-space" style="border-right: thing dashed black;">
+    <div id="{{ product.id }}" class="column text-center product-range-item row-space">
         <h3>{{ product.display_title }}</h3>
         <img src="img/sack.png" style="background-color: {{ product.colour }};">
             <ul>
@@ -44,4 +44,30 @@ layout: home
             <a href="/order" class="button medium">Order Now</a>
     </div>
     {% endfor %}
+</div>
+<div class="row expanded text-center">
+    <hr>
+    <h1>Partners</h1>
+</div>
+
+<div class="row expanded row-space small-up-1 medium-up-2 row-space">
+    <div id="home-testimonials" class="column text-center">
+        <h3>TESTIMONIALS</h3>
+        {% for t in site.data.testimonial %}
+            <p>"{{ t.testimonial }}"</p>
+            <p>- {{ t.author | upcase }} -</p>
+        {% endfor %}
+    </div>
+
+    <div id="home-partners" class="column text-center">
+        <h3>PARTNERS</h3>
+        <div class="row small-up-1 medium-up-2">
+            {% for p in site.data.partner %}
+            <div class="column">
+                <img class="partner-logo" src="/img/partner/{{ p.id }}.png" alt="{{ p.name }}"/>
+                <h6>{{ p.name }}</h6>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
