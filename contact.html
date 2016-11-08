@@ -3,7 +3,7 @@ layout: default
 title: Contact Us
 ---
 
-<p>For general enquires, please email us at <a href="mailto:{{ site.email }}?subject=Web Enquiry">{{ site.email }}</a>, alternatively, contact us via the numbers below.</p>
+<p>For orders and general enquires, please email us at <a href="mailto:{{ site.email }}?subject=Web Enquiry">{{ site.email }}</a>, alternatively, feel free to give us a call.</p>
 
 <p>You can also reach us via our <a href="https://www.facebook.com/BaliCompostCrafters">Facebook</a> page</p>
 
@@ -13,8 +13,8 @@ title: Contact Us
         <div class="contact-box">
 
             <img src="/img/{{ member.name }}.png" alt="{{ member.full_name}}">
-            <h2>{{ member.full_name }}</h2>
-            <h3>{{ member.phone }}</h3>
+            <h5>{{ member.full_name }}</h5>
+            <h6>{{ member.phone }}</h6>
         </div>
     </div>
 {% endfor %}

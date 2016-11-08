@@ -128,7 +128,13 @@ h2,h3,h4,h5,h6 {
 
 div.simply-living-organic-earth img {
     border-radius: 100%;
-    width: 15rem;
+    width: 21rem;
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+div.simply-living-organic-earth p {
+    font-weight: bold;
 }
 
 hr {
@@ -137,8 +143,8 @@ hr {
 }
 
 #home-testimonials {
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 3em;
+    padding-right: 3em;
     font-weight: bold;
 }
 
@@ -157,8 +163,12 @@ hr {
     background-color: $white;
 }
 
-
 #site-footer p {
     color: $white;
     margin: .3rem;
+}
+
+main {
+    min-height: 90vh;
+    background-color: $white;
 }

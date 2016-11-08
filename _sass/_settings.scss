@@ -118,7 +118,7 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 24,
+    'h1': 33,
     'h2': 20,
     'h3': 19,
     'h4': 18,
@@ -126,7 +126,7 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
+    'h1': 52,
     'h2': 40,
     'h3': 31,
     'h4': 25,
@@ -159,8 +159,8 @@ $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: disc;
-$list-style-position: outside;
-$list-side-margin: 1.25rem;
+$list-style-position: inside;
+$list-side-margin: 0rem;
 $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;

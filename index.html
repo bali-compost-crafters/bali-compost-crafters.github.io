@@ -15,14 +15,18 @@ layout: home
         <h1 class="text-center">{{ site.slogan }}</h1>
     </div>
 
-    <div class="row expanded small-up-1 medium-up-2 simply-living-organic-earth row-space">
-        <div class="column text-center row-space">
-            <img src="/img/simply_living_organic_earth.jpg" alt="Image of a nice tree in tropical garden" />
+    <div class="row simply-living-organic-earth row-space">
+        <div class="columns row-space small-12 medium-8">
+            <p>Thank you for your interest in a new model for green waste management in Bali. Our compost, mulch and topsoil products are crafted to the highest standard, using 100% organic materials and proven large-scale composting techniques. </p>
+
+            <p>BCC focuses on promoting conscious waste separation and renewable agriculture practices. We divert large amounts of pure green waste before it reaches Bali's main rubbish dump at Suwung, and help educate Bali's next generation of farmers, buisnesses and householders, primarily through our partnership with Udayana University. Our other key relationship is with the local Badung government's sanitation department, Dinas Kebersihan Pertamanan (DKP).</p>
+
+            <p>Our project is a step toward a solution to save Bali from an outrage of unmanaged waste. Poor waste management, unsustainable farming practices, and a dwindling water supply is something that’s going to tear the island’s guts out. We decided to set up a working example of management that could conceivably be implemented on a scale that could help to solve the problem, and pay its own way.</p>
+
+            <p>Good for Bali. Good for you.</p>
         </div>
-        <div class="column row-space">
-            <p><strong>Our mission is to reduce the ammount of waste entering Bali's tip! 70% or more of the waste in the tip is green waste. We take the waste and profit from it, and the earth profits also.</strong></p>
-            <p><strong>Our mission is to reduce the ammount of waste entering Bali's tip! 70% or more of the waste in the tip is green waste. We take the waste and profit from it, and the earth profits also.</strong></p>
-            <p><strong>Our mission is to reduce the ammount of waste entering Bali's tip! 70% or more of the waste in the tip is green waste.</strong></p>
+        <div class="columns small-12 medium-4 text-center">
+            <img src="/img/simply_living_organic_earth.jpg" alt="Image of a nice tree in tropical garden" />
         </div>
     </div>
 </div>
@@ -36,12 +40,12 @@ layout: home
     <div id="{{ product.id }}" class="column text-center product-range-item row-space">
         <h3>{{ product.display_title }}</h3>
         <img src="img/sack.png" style="background-color: {{ product.colour }};">
-            <ul>
+            <ul class="no-bullet">
                 {% for benefit in product.benefits %}
-                <li>{{ benefit }}</li>
+                <li>&bull; {{ benefit }}</li>
                 {% endfor %}
             </ul>
-            <a href="/order" class="button medium">Order Now</a>
+            <a href="/contact" class="button medium">Order Now</a>
     </div>
     {% endfor %}
 </div>
@@ -53,6 +57,7 @@ layout: home
 <div class="row expanded row-space small-up-1 medium-up-2 row-space">
     <div id="home-testimonials" class="column text-center">
         <h3>TESTIMONIALS</h3>
+        <br>
         {% for t in site.data.testimonial %}
             <p>"{{ t.testimonial }}"</p>
             <p>- {{ t.author | upcase }} -</p>
