@@ -37,11 +37,7 @@ main {
     text-align: center;
     height: 90vh;
 
-    background: url(/img/intro-bg.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(/img/intro-bg.jpg) repeat-x;
 
     &:before {
         content: '';
