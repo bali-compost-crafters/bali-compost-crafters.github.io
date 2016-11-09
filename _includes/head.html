@@ -6,30 +6,10 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
-    <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="/js/foundation.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="icon" type="imageimg/favicon/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-
-    <!--
-    <script type="text/javascript">
-//<![CDATA[
-    (function() {
-     var shr = document.createElement('script');
-     shr.setAttribute('data-cfasync', 'false');
-     shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
-     shr.type = 'text/javascript'; shr.async = 'true';
-     shr.onload = shr.onreadystatechange = function() {
-     var rs = this.readyState;
-     if (rs && rs != 'complete' && rs != 'loaded') return;
-     var site_id = 'a0b65a6ede8b180acaa4266ec56eb32a';
-     try { Shareaholic.init(site_id); } catch (e) {}
-     };
-     var s = document.getElementsByTagName('script')[0];
-     s.parentNode.insertBefore(shr, s);
-     })();
-//]]>
-    </script> -->
 </head>
