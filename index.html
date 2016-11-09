@@ -58,7 +58,7 @@ layout: home
     <div id="home-testimonials" class="column text-center">
         <h3>TESTIMONIALS</h3>
         <br>
-        {% for t in site.data.testimonial %}
+        {% for t in site.data.testimonial limit:2 %}
             <p>"{{ t.testimonial }}"</p>
             <p>- {{ t.author | upcase }} -</p>
         {% endfor %}
