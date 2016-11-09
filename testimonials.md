@@ -3,7 +3,10 @@ title: Testimonials
 layout: default
 ---
 
-{% for t in site.data.testimonial %}
-  *"{{ t.testimonial }}"*
-  {{ t.author | upcase }}
-{% endfor %}
+<div class="row expanded text-center" style="padding-right: 4rem; padding-left: 4rem;">
+        {% for t in site.data.testimonial %}
+        <p><strong>"{{ t.testimonial }}"</strong></p>
+        <p><strong>- {{ t.author}} - </strong></p>
+        <hr>
+        {% endfor %}
+</div>
