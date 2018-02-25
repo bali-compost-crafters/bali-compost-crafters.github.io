@@ -29,7 +29,7 @@ main {
 #brand-logo {
     height: 80vh;
     width: auto;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 1em;
 }
 
@@ -37,25 +37,10 @@ main {
     text-align: center;
     height: 90vh;
 
-    background: url(/img/intro-bg.jpg) repeat-x;
-
-    &:before {
-        content: '';
-        position: absolute;
-        height: 90vh;
-        top: auto;
-        right: 0;
-        bottom: auto;
-        left: 0;
-        width: 100%;
-        background: -moz-linear-gradient(top,  rgba(237,230,218,0) 95%, rgba(237,230,218,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  rgba(237,230,218,0) 95%,rgba(237,230,218,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  rgba(237,230,218,0) 95%,rgba(237,230,218,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ede6da', endColorstr='#ede6da',GradientType=0 ); /* IE6-9 */
-
-
-
-    }
+    background-image: url('https://c.pxhere.com/photos/54/3c/landscape_nature_field_asia_green_paddy_sky_agriculture-760120.jpg!d');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #top-menu-icon {
@@ -160,7 +145,7 @@ hr {
 }
 
 #site-footer p {
-    color: $white;
+    color: $off-white;
     margin: .3rem;
 }
 
